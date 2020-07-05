@@ -10,7 +10,6 @@ The train and test set are used as inputs for running the Implementer.
 <br>
 <br>
 ### Models Used:
-<br>
 1. Logistic Regression
 2. Decision Tree Classifier
 3. Support Vector Classifier
@@ -18,7 +17,6 @@ The train and test set are used as inputs for running the Implementer.
 5. Adaboost Classifier
 
 ### Metrics used:
-<br>
 1. Classification Report
 2. Accuracy Score
 3. Confusion Matrix
