@@ -13,8 +13,9 @@ The train and test set are used as inputs for running the Implementer.
 1. Logistic Regression
 2. Decision Tree Classifier
 3. Support Vector Classifier
-4. Random Forest Classifier
-5. Adaboost Classifier
+4. K Neighbors Classifier
+5. Random Forest Classifier
+6. Adaboost Classifier
 
 ### Metrics used:
 1. Classification Report
