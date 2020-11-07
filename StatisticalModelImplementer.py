@@ -120,3 +120,27 @@ class StatisticalModelImplenter():
 
         for name, matrix in all_model_metrics.items():
             print('{}\n{}\n\n'.format(name, matrix))
+            
+    def count_values(self, list_of_values):
+        zeros = list_of_values.count(0)
+        ones = list_of_values.count(1)
+
+        if zeros == ones:
+            print('zeros == 1')
+        elif zeros > ones:        
+            return 0
+        else:
+            return 1
+        
+            
+    def ensemble_model(self):
+        
+        output_count = []
+        for i, model in enumerate(self.__all_models):
+            
+            list_of_outputs = list(model.predict(self.__x_test))
+            output_count.append(self.count_values(list_of_outputs))
+        
+        max_predicted_val = self.count_values(output_count)
+        print(max_predicted_val)
+            
