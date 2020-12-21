@@ -4,6 +4,8 @@ Created on Sun Jul  5 16:08:16 2020
 
 @author: mishr
 """
+import numpy as np
+import pandas as pd 
 
 # picking models for prediction.
 from sklearn.linear_model import LogisticRegression
