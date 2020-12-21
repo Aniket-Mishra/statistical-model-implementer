@@ -110,7 +110,7 @@ class StatisticalModelImplenter():
     def apply_metric(self,  metric):
 
         metric_list = []
-        for i, model in enumerate(self.__all_models):
+        for _, model in enumerate(self.__all_models):
             metric_item = metric(self.__y_test, model.predict(self.__x_test))
             metric_list.append(metric_item)
 
@@ -138,7 +138,7 @@ class StatisticalModelImplenter():
     def ensemble_model(self):
         
         output_count = []
-        for i, model in enumerate(self.__all_models):
+        for _, model in enumerate(self.__all_models):
             
             list_of_outputs = list(model.predict(self.__x_test))
             output_count.append(self.count_values(list_of_outputs))
