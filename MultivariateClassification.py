@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd 
 
 # picking models for prediction.
-from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
 
@@ -20,15 +19,14 @@ class BivariateClassification():
     
     def __init__(self):
 
-        self.logistic_regression = LogisticRegression()
         self.support_vector_machine = SVC()
         self.decision_tree_classifier = DecisionTreeClassifier()
         self.random_forest_classifier = RandomForestClassifier()
         self.adaboost_classifer = AdaBoostClassifier()
 
-        self.all_models = [self.logistic_regression, self.support_vector_machine, self.decision_tree_classifier, 
+        self.all_models = [self.support_vector_machine, self.decision_tree_classifier, 
                            self.random_forest_classifier, self.adaboost_classifer]
-        self.all_model_names = ['Logistic Regression', 'Support Vector Classifier', 'Decision Tree Classifier', 
+        self.all_model_names = ['Support Vector Classifier', 'Decision Tree Classifier', 
                            'Random Forest Classifier', 'Adaboost Classifier']
 
         self.metric_names = ['Accuracy Score', 'Confusion Matrix',
@@ -69,3 +67,4 @@ class BivariateClassification():
     def display_report(self):
         display_classification_report(self.all_model_names, self.all_models, self.y_test, self.x_test)
         return self.all_model_info
+    

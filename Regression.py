@@ -12,9 +12,7 @@ from sklearn.ensemble import RandomForestRegressor
 #metrics to check our model performance
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
-
-def root_mean_squared_error(y_real, y_predicted):
-    return np.sqrt(mean_squared_error(y_real, y_predicted))
+from MiscellaneousFunctions import root_mean_squared_error
 
 class Regression():
     '''
@@ -33,9 +31,7 @@ class Regression():
                            self.random_forest_regressor, self.adaboost_regressor]
         self.all_model_names = ['Linear Regression', 'Support Vector Regressor', 'Decision Tree Regressor', 
                            'Random Forest Regressor', 'Adaboost Regressor']
-        
-        self.metric_names = ['Train Score', 'Test Score', 'Classification Report', 'Confusion Matrix',
-                            'F1 Score', 'Accuracy Score']
+
         self.train_scores = []
         self.test_scores = []        
         self.metric_list = [mean_absolute_error, mean_squared_error, root_mean_squared_error]
