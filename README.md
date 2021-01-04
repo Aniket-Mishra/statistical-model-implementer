@@ -17,10 +17,11 @@ The train and test set are used as inputs for running the Implementer.
 
 ### Models Used
 #### Regression
-1. Statsmodels Regression methods
-2. Linear Regression (sklearn)
-3. Decision Tree Regressor
-4. Support Vector Regression
+1. Linear Regression (sklearn)
+2. Decision Tree Regressor
+3. Support Vector Regression
+4. Random Forest Regressor
+5. AdaBoost Regressor
 
 #### Classification
 1. Logistic Regression (bivariate only)
