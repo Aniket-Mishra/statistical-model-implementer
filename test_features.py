@@ -4,20 +4,16 @@ import pandas as pd
 # picking regression models for prediction
 import statsmodels.api as sm
 from sklearn.linear_model import LinearRegression
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.svm import SVR
 
 # ensemble models for better performance in classification
 from sklearn.ensemble import AdaBoostRegressor
 from sklearn.ensemble import RandomForestRegressor
 
-# Picking binomial classification models
+# Picking bivariate classification models
 from sklearn.linear_model import LogisticRegression
-from sklearn.naive_bayes import GaussianNB
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.svm import SVR
 
-# picking multiclass classification models for prediction.
-from sklearn.naive_bayes import MultinomialNB
-# from sklearn.naive_bayes import ComplementNB # For inbalanced datasets
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
